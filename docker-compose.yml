@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hello-world:
+    image: hello-world
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: hello-world-log-group
+        awslogs-stream: hello-world
+        awslogs-region: us-east-1
